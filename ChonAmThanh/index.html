@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+
+</head>
+<body>
+<header class="container mx-auto py-2 px-10 flex  justify-between relative items-center">
+    <div class="font-bold text-xl w-40 ">
+        <img class="w-full max-w-full" src="./assets/images/logo.png" alt="Chon am thanh website">
+    </div>
+    <div x-data="{open:false}" class=" lg:hidden " @click.outside="open = false">
+        <p @click="open=!open">
+            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg class="fill-red-500" height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg>
+        </p>
+        <div x-cloak x-show="open" class="flex flex-col bg-white text-black items-center absolute top-full w-full left-0">
+            <a href="" class="block px-2 py-3 text-left w-full">Review Loa va phu kien</a>
+            <a href="" class="block px-2 py-3 text-left w-full">Review Tai nghe</a>
+            <a href="" class="block px-2 py-3 text-left w-full">Review Micro </a>
+
+        </div>
+    </div>
+    <div class="hidden lg:block text-primary font-medium">
+        <div class="">
+            <a href="#" class="inline-block px-3 py-3 text-left ">Review Loa</a>
+            <a href="#" class="inline-block px-3 py-3 text-left ">Review Tai nghe</a>
+            <a href="#" class="inline-block px-3 py-3 text-left ">Review Micro </a>
+            <a href="#" class="inline-block px-3 py-3 text-left ">Review Máy ghi âm </a>
+        </div>
+
+    </div>
+</header>
+<main >
+    <div class="flex items-center justify-center  h-[100vh] w-full bg-no-repeat bg-center lg:bg-cover bg-[url('https://i.rtings.com/assets/products/TqN5mnfE/sony-wh-1000xm4-wireless/in-test-medium.jpg?format=auto')]">
+
+        <div>
+            <div style="text-shadow: 0 0 16px rgba(0,0,0,0.75)" class=" px-5 text-white text-2xl  lg:text-5xl font-bold mb-5 lg:mb-10 ">
+                Khám phá
+                chất âm đỉnh cao
+                <br>
+                tìm đúng phụ kiện dành cho bạn
+            </div>
+            <div class="bg-black bg-opacity-50 text-xl lg:text-3xl text-white font-medium p-4">
+                Định hình sự lựa chọn, nâng tầm trải nghiệm
+            </div>
+        </div>
+    </div>
+    <div class="container lg:w-3/4 mx-auto border-t border-b  border-solid border-red-500 py-6 lg:py-10 my-4 lg:my-10 ">
+        <div class="grid grid-cols-2 gap-10 ">
+            <div class=" col-span-2 lg:col-span-1">
+                <div class="shadow rounded p-5">
+                    <p class="text-3xl font-medium text-center text-red-700 mb-6"> Tai nghe</p>
+                    <p class="">Khám phá các dòng tai nghe với chất lượng âm thanh xuất sắc, thiết kế thoải mái, và tính năng vượt trội. Đọc ngay các review chi tiết về những tai nghe tốt nhất 2025, phù hợp cho âm nhạc, gaming, và cuộc gọi.</p>
+                </div>
+            </div>
+            <div class=" col-span-2 lg:col-span-1">
+                <div class="shadow rounded p-5">
+                    <p class="text-3xl font-medium text-center text-red-700 mb-6"> Loa</p>
+                    <p class="">Tìm hiểu các bài review chi tiết về loa : chất lượng âm thanh, thiết kế, giá cả. Khám phá top sản phẩm đáng mua nhất 2025 cùng các gợi ý lựa chọn phù hợp!</p>
+                </div>
+            </div>
+            <div class=" col-span-2 lg:col-span-1">
+                <div class="shadow rounded p-5">
+                    <p class="text-3xl font-medium text-center text-red-700 mb-6">Micro phone</p>
+                    <p class="">Khám phá các loại microphone tốt nhất cho các nhu cầu khác nhau: thu âm, hát karaoke, livestream, và thu âm chuyên nghiệp. Đọc review chi tiết về các microphone hàng đầu 2025 để chọn lựa sản phẩm phù hợp.</p>
+                </div>
+            </div>
+            <div class=" col-span-2 lg:col-span-1">
+                <div class="shadow rounded p-5">
+                    <p class="text-3xl font-medium text-center text-red-700 mb-6"> Thiết Bị Ghi Âm</p>
+                    <p class="">Khám phá các thiết bị ghi âm chất lượng giúp bạn ghi lại âm thanh chính xác và chi tiết. Đọc các bài review chi tiết về các thiết bị ghi âm tốt nhất 2025, phục vụ cho công việc, sáng tạo hay giải trí.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class=" relative py-10 px-4 ">
+        <div class="hidden lg:block absolute top-0 bottom-0 left-0 right-0 -z-10 bg-cover bg-no-repeat"></div>
+        <div class="container mx-auto mb-6 lg:mb-10">
+            <p class="text-red-700  text-3xl lg:text-5xl font-bold text-center mb-5">Đánh giá chân thực – Lựa chọn đáng tin</p>
+            <p class="text-center text-red-500  text-lg lg:text-2xl font-medium">Sự tin cậy là nền tảng của mọi quyết định.</p>
+        </div>
+        <div class=" mx-auto lg:w-1/2 mb-6">
+            <div class="flex flex-col lg:flex-row gap-5 items-center">
+                <div class="flex-1">
+                    <img class="w-full max-w-full" src="./assets/images/logo.png" alt="Chon am thanh website">
+                </div>
+                <div class=" flex-1">
+                    <p class="text-3xl font-medium mb-4">Tự Mua Sản Phẩm Để Đánh Giá Khách Quan
+                    </p>
+                    <p>
+                        Chúng tôi tự mua tất cả các phụ kiện âm thanh cần review, giống như cách một khách hàng thông thường thực hiện. Điều này đảm bảo rằng các sản phẩm được đánh giá thực sự là những gì bạn sẽ nhận được khi mua, không bị ảnh hưởng bởi bất kỳ nhà sản xuất nào.
+
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class=" mx-auto lg:w-1/2 mb-6">
+            <div class="flex flex-col lg:flex-row justify-center gap-5 items-center">
+                <div class="flex-1">
+                    <img class="w-full max-w-full" src="./assets/images/logo.png" alt="Chon am thanh website">
+                </div>
+                <div class=" flex-1">
+                    <p class="text-3xl font-medium mb-4">Phương Pháp Kiểm Tra Chuẩn Hóa và Minh Bạch</p>
+                    <p>
+                        Mỗi phụ kiện âm thanh được kiểm tra theo một quy trình nghiêm ngặt, từ chất lượng âm thanh, thiết kế đến độ bền và hiệu suất sử dụng. Chúng tôi công khai phương pháp kiểm tra, giúp bạn hoàn toàn yên tâm với kết quả và dễ dàng so sánh các sản phẩm.
+
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class=" mx-auto lg:w-1/2">
+            <div class="flex flex-col lg:flex-row justify-center gap-5 items-center">
+                <div class="flex-1">
+                    <img class="w-full max-w-full" src="./assets/images/logo.png" alt="Chon am thanh website">
+                </div>
+                <div class=" flex-1">
+                    <p class="text-3xl font-medium mb-4">Đánh Giá Sâu Sắc Hiệu Suất Thực Tế
+                    </p>
+                    <p>
+                        Chúng tôi thực hiện các bài kiểm tra thực tế với các tình huống sử dụng đa dạng như nghe nhạc, xem phim, hoặc chơi game. Những đánh giá này tập trung vào các yếu tố bạn thực sự quan tâm, mang đến thông tin hữu ích để bạn đưa ra quyết định chính xác nhất.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</main>
+<div class="container mx-auto bg-black lg:py-10 py-6">
+    <div class="lg:w-3/4 mx-auto">
+        <div class="flex justify-between text-white items-center">
+            <a href="./index.html" class="block w-40">
+                <img class="w-full max-w-full h-full" src="./assets/images/logo.png" alt="Chon am thanh website">
+            </a>
+            <div>
+                <div>
+                    <a href="#" class=""> Về chúng tôi
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class=""> Liên hệ
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class=""> Chính sách bảo mật
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="text-center text-white mt-10">
+            Copyright 2025 chonamthanh.com
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>
