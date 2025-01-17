@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us | SoundEquipShop.com</title>
+    <meta name="description" content="Get in touch with the team at SoundEquipShop.com. Whether you have questions, feedback, or need support, we’re here to help. Reach out via email or our contact form today!">
+    <meta name="description"
+          content="Discover how SoundEquipShop.com provides expert, unbiased reviews on audio equipment and accessories. Learn about our hands-on testing process, in-depth evaluations, and commitment to helping you find the best sound gear for your needs.">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6ECFF2',
+                        "normal": '#ffffff'
+                    }
+                }
+            }
+        }
+    </script>
+
+
+</head>
+<body class="bg-black">
+<header class="container mx-auto py-2 px-4 lg:px-10 flex lg:block  justify-between relative items-center">
+    <a href="./index.html" class="font-bold text-xl block w-40 lg:mx-auto ">
+        <img class="w-full max-w-full h-full" src="assets/images/logo.png" alt="Chon am thanh website">
+    </a>
+    <div x-data="{open:false}" class=" lg:hidden " @click.outside="open = false">
+        <p @click="open=!open">
+            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'
+            'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+            <svg class="fill-primary" height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1"
+                 viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg>
+        </p>
+        <div x-cloak x-show="open"
+             class="flex flex-col bg-white text-black items-center absolute top-full w-full left-0 z-10">
+            <a href="" class="block px-2 py-3 text-left w-full">Speaker Review</a>
+            <a href="" class="block px-2 py-3 text-left w-full">Headphone Review</a>
+            <a href="" class="block px-2 py-3 text-left w-full">Microphone Review</a>
+
+        </div>
+    </div>
+    <div class="hidden lg:block text-normal font-bold">
+        <div class="text-center">
+            <a href="#" class="inline-block hover:underline hover:text-primary px-3 py-3 text-left ">Speaker Review</a>
+            <a href="#" class="inline-block hover:underline hover:text-primary px-3 py-3 text-left ">Headphone
+                Review</a>
+            <a href="#" class="inline-block hover:underline hover:text-primary px-3 py-3 text-left ">Microphone
+                Review </a>
+            <a href="#" class="inline-block hover:underline hover:text-primary px-3 py-3 text-left "> Recording
+                Review </a>
+        </div>
+
+    </div>
+</header>
+<main>
+    <div class=" relative py-10 px-4 ">
+        <div class="hidden lg:block absolute top-0 bottom-0 left-0 right-0 -z-10 bg-cover bg-no-repeat"></div>
+        <div class="container mx-auto mb-6 lg:mb-10">
+            <p style="text-shadow: 0 0 16px rgba(110,207,242,0.75)"
+               class="text-normal  text-3xl lg:text-5xl font-bold text-center mb-5">Contact Us
+            </p>
+
+        </div>
+    </div>
+
+    <div class="container mx-auto lg:w-3/4 mt-10 px-4 text-white">
+       <div class="flex flex-col-reverse lg:flex-row gap-4 ">
+           <div  class="lg:w-1/3">
+               <div>
+                   <img class="w-full h-full max-w-full" src="/assets/images/logo.png" alt="SoundEquipShop.com">
+               </div>
+               <p>
+                   Thank you for visiting SoundEquipShop.com—your trusted partner in the pursuit of exceptional sound. Whether
+                   you're upgrading your gear or just starting out, we are committed to providing you with the resources and
+                   guidance you need to make the best choice for your audio needs.
+               </p>
+           </div>
+           <div class="lg:w-3/4">
+               <div>
+                   <form action="" method="POST">
+                       <div class="lg:flex block">
+                           <div class="mb-6 flex-1">
+                               <lable class="font-light" for="name"> Your name *</lable>
+                               <input x-model="name"  name="name" class=" border-[#3c3b3b] lg:border-r-[1px] border-[2px] block  pl-4 py-4 lg:py-3 w-full" id="name" type="text">
+                           </div>
+                           <div class="mb-6 flex-1">
+                               <lable class="font-light" for="email"> Your email *</lable>
+                               <input x-modal="email" name="email" class="lg:border-l-[1px] border-[2px] block border-[#3c3b3b] pl-4 py-4 lg:py-3 w-full" id="email" type="text">
+                           </div>
+                       </div>
+                       <div class="mb-6">
+                           <lable class="font-light" for="message"> Your message  *</lable>
+                           <textarea x-model="message" class=" border-[2px] block border-[#3c3b3b] pl-4 py-4 lg:py-3 w-full" name="message" id="message" cols="30" rows="10"></textarea>
+                       </div>
+                       <div class="text-center">
+                           <button @click="check" class="text-white bg-black text-2xl hover:bg-primary transition-colors duration-300 px-10 py-2"> SEND </button>
+                       </div>
+
+                   </form>
+               </div>
+           </div>
+
+       </div>
+    </div>
+
+
+</main>
+<div class="container mx-auto bg-black lg:py-10 py-6">
+    <div class="lg:w-3/4 mx-auto">
+        <div class="flex justify-between text-white items-center">
+            <a href="./index.html" class="block w-40">
+                <img class="w-full max-w-full h-full" src="assets/images/logo.png" alt="Chon am thanh website">
+            </a>
+            <div>
+                <div>
+                    <a href="/about.html" class="hover:underline"> About Us
+                    </a>
+                </div>
+                <div>
+                    <a href="/contact.html" class="hover:underline"> Contact
+                    </a>
+                </div>
+                <div>
+                    <a href="/policy.html" class="hover:underline"> Privacy Policy
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="text-center text-white mt-10">
+            Copyright 2025 SoundEquipShop.com
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us - Expert Audio Gear Reviews & Insights | SoundEquipShop.com</title>
+    <meta name="description" content="Learn about SoundEquipShop.com, your trusted source for unbiased reviews and insights on audio equipment and accessories. Discover our hands-on testing process and expert evaluations to help you find the perfect sound gear.">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6ECFF2',
+                        "normal": '#ffffff'
+                    }
+                }
+            }
+        }
+    </script>
+
+
+</head>
+<body class="bg-black">
+<header class="container mx-auto py-2 px-4 lg:px-10 flex lg:block  justify-between relative items-center">
+    <a href="./index.html" class="font-bold text-xl block w-40 lg:mx-auto ">
+        <img class="w-full max-w-full h-full" src="assets/images/logo.png" alt="Chon am thanh website">
+    </a>
+    <div x-data="{open:false}" class=" lg:hidden " @click.outside="open = false">
+        <p @click="open=!open">
+            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg class="fill-primary" height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg>
+        </p>
+        <div x-cloak x-show="open" class="flex flex-col bg-white text-black items-center absolute top-full w-full left-0 z-10">
+            <a href="" class="block px-2 py-3 text-left w-full">Speaker Review</a>
+            <a href="" class="block px-2 py-3 text-left w-full">Headphone Review</a>
+            <a href="" class="block px-2 py-3 text-left w-full">Microphone Review</a>
+
+        </div>
+    </div>
+    <div class="hidden lg:block text-normal font-bold">
+        <div class="text-center">
+            <a href="#" class="inline-block hover:underline hover:text-primary px-3 py-3 text-left ">Speaker Review</a>
+            <a href="#" class="inline-block hover:underline hover:text-primary px-3 py-3 text-left ">Headphone Review</a>
+            <a href="#" class="inline-block hover:underline hover:text-primary px-3 py-3 text-left ">Microphone Review </a>
+            <a href="#" class="inline-block hover:underline hover:text-primary px-3 py-3 text-left "> Recording Review </a>
+        </div>
+
+    </div>
+</header>
+<main >
+    <div class=" relative py-10 px-4 ">
+        <div class="hidden lg:block absolute top-0 bottom-0 left-0 right-0 -z-10 bg-cover bg-no-repeat"></div>
+        <div class="container mx-auto mb-6 lg:mb-10">
+            <p style="text-shadow: 0 0 16px rgba(110,207,242,0.75)" class="text-normal  text-3xl lg:text-5xl font-bold text-center mb-5">About Us
+            </p>
+            <p style="text-shadow: 0 0 16px rgba(110,207,242,0.75)" class="text-center text-normal
+             text-lg lg:text-2xl font-medium">Find the Perfect Gear with Confidence</p>
+        </div>
+    </div>
+
+    <div class="container mx-auto lg:w-3/4 mt-10 px-4 text-white">
+        <div class="mb-8">
+            <h2 class="text-primary text-3xl font-bold mb-6"> About Us
+
+            </h2>
+
+            <p class="mb-6">Welcome to SoundEquipShop.com, the ultimate destination for expert reviews, insights, and recommendations on the best audio equipment and accessories. Whether you're a professional sound engineer, a musician, or an audio enthusiast, we are here to guide you through the world of sound gear with honest and reliable reviews, helping you make the best choices for your needs.
+            </p>
+            <p>
+                At SoundEquipShop.com, we understand how crucial it is to have the right equipment to achieve the perfect sound. That’s why we dedicate ourselves to providing detailed and unbiased reviews on a wide range of audio products, from speakers and microphones to headphones, amplifiers, and other essential accessories. Our mission is to empower you with the information needed to elevate your audio experience, no matter your level of expertise.
+            </p>
+        </div>
+        <div class="mb-8">
+            <h2 class="text-primary text-3xl font-bold mb-6">Our Review Process</h2>
+
+            <p class="mb-6">We take the review process seriously, and here's how we ensure that you get the most accurate, detailed, and useful information:
+
+            </p>
+           <ol class="list-desc">
+               <li class="mb-4">
+                   Hands-On Testing: All products we review undergo extensive, hands-on testing. Our team uses each piece of equipment in real-world scenarios to evaluate its performance. This includes testing in various environments, from home studios to outdoor events, to give you a complete picture of how the gear will perform in different settings.
+
+               </li>
+               <li class="mb-4">
+                   Comprehensive Evaluation: Every product is assessed based on a set of criteria that includes sound quality, build durability, ease of use, features, and value for money. We understand that every user has different needs, so we provide a detailed analysis of what each product does best and where it might fall short.
+
+               </li>
+               <li class="mb-4">
+                   Expert Opinions: Our team consists of seasoned audio professionals with years of hands-on experience in the industry. We combine technical knowledge with practical insights, so you can trust that our reviews are not only objective but also based on a deep understanding of the products.
+
+               </li>
+               <li class="mb-4">
+                   Side-by-Side Comparisons: We know that choosing the right audio equipment can be daunting with so many options available. That’s why we offer side-by-side comparisons to help you see how different products stack up against each other in terms of performance, features, and price. This makes it easier for you to make a choice that aligns with your personal preferences and budget.
+
+
+               </li>
+               <li class="mb-4">
+                   User Feedback Integration: We value the voice of the community, and that's why we consider user feedback and customer reviews when evaluating products. This helps us ensure that our reviews reflect real-world experiences and not just technical specifications.
+
+
+               </li>
+               <li class="mb-4">
+                   Up-to-Date Information: The audio equipment industry is constantly evolving, with new technologies and innovations emerging regularly. Our team is dedicated to keeping up with the latest trends, ensuring that our reviews reflect the most current models and updates.
+
+               </li>
+
+
+
+
+           </ol>
+        </div>
+        <div class="mb-8">
+            <h2 class="text-primary text-3xl font-bold mb-6"> Why Trust Us?
+
+            </h2>
+
+            <ol class="list-desc">
+                <li class="mb-4">
+                    Unbiased Reviews: We take pride in offering objective, unbiased reviews. We never accept paid placements or sponsorships that could influence our opinions. Your trust is our priority.
+
+                </li>
+                <li class="mb-4">
+                    Transparency: We believe in full transparency, so you’ll know exactly how we evaluate each product. We’ll point out the pros and cons to help you make an informed decision.
+
+                </li>
+                <li class="mb-4">
+                    Expertise: Our team consists of audio professionals with years of experience in sound engineering, music production, and audio technology. We’re not just enthusiasts—we’re experts who understand what makes great audio gear.
+
+                </li>
+                <li class="mb-4">
+                    Community-Focused: We’re here to help the audio community by sharing knowledge and fostering informed conversations around the latest in sound equipment. We encourage interaction and feedback, allowing us to continuously improve and provide even more helpful content.
+
+
+                </li>
+            </ol>
+        </div>
+        <p>
+            Thank you for visiting SoundEquipShop.com—your trusted partner in the pursuit of exceptional sound. Whether you're upgrading your gear or just starting out, we are committed to providing you with the resources and guidance you need to make the best choice for your audio needs.
+        </p>
+    </div>
+
+
+
+</main>
+<div class="container mx-auto bg-black lg:py-10 py-6">
+    <div class="lg:w-3/4 mx-auto">
+        <div class="flex justify-between text-white items-center">
+            <a href="./index.html" class="block w-40">
+                <img class="w-full max-w-full h-full" src="assets/images/logo.png" alt="Chon am thanh website">
+            </a>
+            <div>
+                <div>
+                    <a href="/about.html" class="hover:underline"> About Us
+                    </a>
+                </div>
+                <div>
+                    <a href="/contact.html" class="hover:underline"> Contact
+                    </a>
+                </div>
+                <div>
+                    <a href="/policy.html" class="hover:underline"> Privacy Policy
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="text-center text-white mt-10">
+            Copyright 2025 SoundEquipShop.com
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>
