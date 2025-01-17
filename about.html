@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us - sacpinchuan.com</title>
+    <meta name="description" content="Tìm hiểu về SacPinChuan.com, website chuyên cung cấp đánh giá chi tiết và uy tín về pin, sạc dự phòng và các thiết bị công nghệ. Chúng tôi giúp bạn lựa chọn sản phẩm chất lượng và phù hợp nhất cho nhu cầu sử dụng.">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF914D',
+                        "normal": '#FF914D'
+                    }
+                }
+            }
+        }
+    </script>
+
+
+</head>
+<body class="bg-black">
+<header class="container mx-auto py-2 px-4 lg:px-10 flex lg:block  justify-between relative items-center h-[16vh]">
+    <a href="./index.html" class="font-bold text-xl block h-24    lg:mx-auto ">
+        <img class="w-full max-w-full h-full object-contain" src="assets/images/logo.png" alt="Chon am thanh website">
+    </a>
+    <div x-data="{open:false}" class=" lg:hidden " @click.outside="open = false">
+        <p @click="open=!open">
+            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'
+            'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+            <svg class="fill-primary" height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1"
+                 viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg>
+        </p>
+        <div x-cloak x-show="open"
+             class="flex flex-col bg-white text-black items-center absolute top-full w-full left-0 z-10">
+            <a href="" class="block px-2 py-3 text-left w-full">Sạc dự phòng </a>
+            <a href="" class="block px-2 py-3 text-left w-full">Review Pin</a>
+            <a href="" class="block px-2 py-3 text-left w-full">Microphone Review</a>
+
+        </div>
+    </div>
+    <div class="hidden lg:block text-normal font-bold">
+        <div class="text-center">
+            <a href="#" class="inline-block hover:underline hover:text-primary px-3 py-3 text-left ">Sạc dự phòng </a>
+            <a href="#" class="inline-block hover:underline hover:text-primary px-3 py-3 text-left ">Review Pin </a>
+            <a href="#" class="inline-block hover:underline hover:text-primary px-3 py-3 text-left ">Review Cáp Sạc </a>
+        </div>
+
+    </div>
+</header>
+<main>
+
+
+    <div class="my-10 lg:my-16">
+        <div style="text-shadow: 0 0 16px rgba(0,0,0,0.75)" class="text-primary    text-center text-4xl font-bold "> Về
+            chúng tôi
+        </div>
+        <div class="container mx-auto lg:w-3/4 mt-10 px-4 text-white">
+
+            <h2 class="text-primary text-3xl font-bold mb-6"> Giới Thiệu Về Chúng Tôi</h2>
+
+            <div class="mb-6">
+
+                <p class="mb-4"> SacPinChuan.com là website chuyên cung cấp các bài đánh giá chi tiết và uy tín về các
+                    thiết bị công nghệ, đặc biệt là pin và sạc dự phòng. Chúng tôi hiểu rằng trong thời đại số hiện nay,
+                    việc sử dụng các thiết bị điện tử như điện thoại, máy tính bảng, laptop... đã trở thành phần không
+                    thể thiếu trong cuộc sống hàng ngày. Và một trong những vấn đề mà người dùng luôn quan tâm là làm
+                    thế nào để giữ cho thiết bị của mình luôn hoạt động tốt nhất trong suốt cả ngày dài, đó chính là lựa
+                    chọn pin và sạc dự phòng phù hợp.
+                </p>
+                <p>Với đội ngũ chuyên gia nhiều năm kinh nghiệm trong ngành công nghệ, SacPinChuan.com mang đến những
+                    bài viết, đánh giá sản phẩm một cách khách quan và chi tiết, giúp người tiêu dùng Việt Nam lựa chọn
+                    được những sản phẩm chất lượng, đáp ứng đúng nhu cầu sử dụng.
+
+                </p>
+
+            </div>
+            <h2 class="text-primary text-3xl font-bold mb-6">Tại sao nên chọn SacPinChuan.com?</h2>
+
+            <div class="mb-6">
+
+                <p class="mb-4"> Đánh giá chuyên sâu: Chúng tôi không chỉ cung cấp thông tin cơ bản về các sản phẩm, mà
+                    còn đưa ra những phân tích, đánh giá chuyên sâu về hiệu năng, chất lượng, độ bền và các tính năng
+                    nổi bật của từng sản phẩm.
+
+
+                </p>
+                <p class="mb-4">Lựa chọn sản phẩm đa dạng: Từ các loại pin sạc dự phòng cho đến các loại pin máy tính,
+                    máy ảnh, thiết bị y tế... SacPinChuan.com mang đến nhiều sự lựa chọn phù hợp với từng nhu cầu sử
+                    dụng của bạn.
+
+
+                </p>
+
+                <p class="mb-4">
+                    Hướng dẫn chi tiết: Bên cạnh các bài đánh giá, chúng tôi còn cung cấp các bài viết hướng dẫn cách
+                    chọn mua, sử dụng và bảo quản các thiết bị pin, sạc dự phòng sao cho hiệu quả và tiết kiệm nhất.
+
+
+                </p>
+                <p class="mb-4">
+                    Cam kết uy tín: Các bài viết và đánh giá của chúng tôi đều được thực hiện một cách khách quan, không
+                    thiên vị, nhằm mang lại thông tin chính xác và hữu ích nhất cho người dùng.
+
+
+                </p>
+
+            </div>
+
+            <h2 class="text-primary text-3xl font-bold mb-6"> Sứ mệnh của chúng tôi</h2>
+
+            <div class="mb-6">
+
+                <p class="mb-4">Sứ mệnh của SacPinChuan.com là trở thành nguồn tài liệu tin cậy cho người tiêu dùng Việt Nam trong việc tìm kiếm và lựa chọn các thiết bị pin, sạc dự phòng chất lượng. Chúng tôi mong muốn giúp các bạn dễ dàng lựa chọn những sản phẩm công nghệ tốt nhất, hỗ trợ nâng cao trải nghiệm sử dụng thiết bị điện tử, từ đó góp phần nâng cao chất lượng cuộc sống hàng ngày.
+                </p>
+            </div>
+            <h2 class="text-primary text-3xl font-bold mb-6">             Liên hệ với chúng tôi
+            </h2>
+
+            <div class="mb-6">
+
+                <p class="mb-4">
+                    Chúng tôi luôn lắng nghe ý kiến đóng góp từ bạn đọc để hoàn thiện hơn mỗi ngày. Nếu bạn có bất kỳ câu hỏi nào về các sản phẩm hoặc muốn chia sẻ ý kiến của mình, đừng ngần ngại
+                    <a href="/contact.html">liên hệ</a> với chúng tôi.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</main>
+<div class="container mx-auto bg-black lg:py-10 py-6">
+    <div class="lg:w-3/4 mx-auto">
+        <div class="flex justify-between text-white items-center">
+            <a href="./index.html" class="block w-40">
+                <img class="w-full max-w-full h-full" src="assets/images/logo.png" alt="Chon am thanh website">
+            </a>
+            <div>
+                <div>
+                    <a href="/about.html" class="hover:underline"> Về chúng tôi
+                    </a>
+                </div>
+                <div>
+                    <a href="/contact.html" class="hover:underline"> Liên hệ
+                    </a>
+                </div>
+                <div>
+                    <a href="/policy.html" class="hover:underline"> Chính sách bảo mật
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="text-center text-white mt-10">
+            Copyright 2025 sacpinchuan.com
+        </div>
+    </div>
+
+
+</div>
+<script>
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        autoplay: {
+            delay: 5000,
+        },
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    });
+</script>
+</body>
+</html>
